@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Load static  -->
+{% load static %}
+
+<!-- Load CSS and JS files  -->
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css"/>
+<script src="{% static 'js/script.js' %}" type="text/javascript"></script>
+
+<!-- Head Section -->
+<head>
+    <!-- Mobile responsive  -->
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <!-- Title and Favicon -->
+    <title>Pagină Temporară</title>
+    <link href="{% static 'images/favicon.ico' %}" rel="shortcut icon" type="image/png"/>
+
+    <!-- Load Bootstrap framework and fonts -->
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+          integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
+    <!-- Load Fonts Family -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+</head>
+
+<!-- Body Section -->
+<body>
+
+<!-- Header Section -->
+<div class="bg-light">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+
+                    <!-- Logo Area -->
+                    <a class="navbar-brand" href="#">
+                        <img alt="Logo" class="d-inline-block align-text-top rounded-4" height="50"
+                             src="static/images/logo.png"
+                             width="50">
+                    </a>
+                </div>
+            </nav>
+            <a class="navbar-brand text-primary" href="#">Python_School</a>
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse"
+                    type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu options Area -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a aria-current="page" class="nav-link disabled" href="#">Despre</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a aria-expanded="false" class="nav-link dropdown-toggle text-primary" data-bs-toggle="dropdown"
+                           href="#"
+                           role="button">
+                            Produse
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item disabled" href="#">Hartă Interactivă</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item disabled" href="#">Platformă Video</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item disabled" href="#">Curs Sincron</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input aria-label="Search" class="form-control me-1" placeholder="Caută" type="search">
+                    <button class="btn btn-outline-success disabled" type="submit">Caută</button>
+                </form>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-outline-primary me-md-4 ms-md-4 disabled" type="button">Autentificare</button>
+                    <button class="btn btn-outline-primary me-md-4 disabled" type="button">Înregistrare</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- First Content Section -->
+    <div class="first-section">
+        <h1 class="display-1"><strong>Python_School</strong></h1>
+        <h6>from python_school import knowledge</h6>
+    </div>
+
+    <!-- Second Content Section -->
+    <div class="second-section">
+        <h3>Până la lansarea produsului <strong>Hartă Interactivă</strong> au mai rămas:</h3>
+    </div>
+
+    <!-- Display the Countdown -->
+    <div class="countdown">
+        <h1 class="display-3" id="demo"></h1>
+    </div>
+
+    <!-- Products Section -->
+    <section class="bg-light">
+        <div class="text-center container py-5">
+            <h2 class="mt-4 mb-5 text-primary"><strong>Produse</strong></h2>
+
+            <!-- Products Row -->
+            <div class="row">
+
+                <!-- First Product Card -->
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="card rounded-bottom-5">
+                        <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                             data-mdb-ripple-color="light">
+                            <img class="w-100"
+                                 src="static/images/harta_interactiva_1.jpeg"/>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Hartă Interactivă</h5>
+                            <p>Harta Interactivă vă ajută să învățați noțiunile fundamentale ale limbajului de
+                                programare Python. Harta Interactivă conține 110 noțiuni specifice limbajului de
+                                programare împărțite în 28 de capitole, iar acestea la rândul lor în 6 module. Fiecare
+                                noțiune este aprovizionată cu resurse text, video și practice. Resursele sunt alese
+                                astfel încât să asigure asimilarea cunoștințelor atât teoretice, cât și practice.</p>
+                            <a href="#!">
+                                <div class="mask">
+                                    <div class="d-flex justify-content-start align-items-end h-100">
+                                        <div class="col">
+                                            <a class="btn btn-primary disabled me-4" href="#">Accesează</a>
+                                            <a class="btn btn-outline-primary disabled" href="#">Află mai mult</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hover-overlay">
+                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Product Card -->
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="card rounded-bottom-5">
+                        <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                             data-mdb-ripple-color="light">
+                            <img class="w-100"
+                                 src="static/images/platforma_video_1.jpeg"/>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Platformă Video</h5>
+                            <p>Platforma Video vă ajută să învățați limbajul de programare Python și să aplicați
+                                cunoștințele dobândite prin rezolvarea exercițiilor de programare și dezvoltarea
+                                proiectelor proprii. Toate acestea sunt posibile cu ajutorul materialelor care cuprind
+                                peste 100 de ore de conținut video în limba română, cuprinzând toate noțiunile necesare
+                                unui dezvoltator Python și exemple pentru implementarea acestora.</p>
+                            <a href="#!">
+                                <div class="mask">
+                                    <div class="d-flex justify-content-start align-items-end h-100">
+                                        <div class="col">
+                                            <a class="btn btn-primary disabled me-4" href="#">Accesează</a>
+                                            <a class="btn btn-outline-primary disabled" href="#">Află mai mult</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hover-overlay">
+                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Third Product Card -->
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="card rounded-bottom-5">
+                        <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                             data-mdb-ripple-color="light">
+                            <img class="w-100"
+                                 src="static/images/curs_sincron_1.jpeg"/>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Curs Sincron</h5>
+                            <p>Cursul Sincron vă ajută să învățați în timp real limbajul de programare Python.
+                                Imediat după parcurgerea anumitei noțiuni veți avea la dispoziție toate fișierele Python
+                                scrise în cadrul cursului pentru a exersa, precum și teme / proiecte de rezolvat pe
+                                cont propriu, de asemenea veți avea acces la înregistrarea cursului. În plus, beneficiați de asistență
+                                în momentele critice și de îndrumare în rezolvarea sarcinilor complexe.</p>
+                            <a href="#!">
+                                <div class="mask">
+                                    <div class="d-flex justify-content-start align-items-end h-100">
+                                        <div class="col">
+                                            <a class="btn btn-primary disabled me-4" href="#">Accesează</a>
+                                            <a class="btn btn-outline-primary disabled" href="#">Află mai mult</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hover-overlay">
+                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+
+                <!-- Grid row -->
+                <div class="row mt-3">
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-graduation-cap fa-beat me-3"></i>Python_School
+                        </h6>
+                        <p>
+                            Dezvoltăm astăzi inteligența umană care va dezvolta inteligența artificială de mâine.
+                        </p>
+                        <div>
+                            <a class="me-4 text-reset fa-2x" href="https://www.linkedin.com/company/python-school/"
+                               target="_blank">
+                                <p class="fab fa-linkedin"></p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Produse
+                        </h6>
+                        <p>
+                            <a class="text-reset" href="#!">Hartă Interactivă</a>
+                        </p>
+                        <p>
+                            <a class="text-reset" href="#!">Platformă Video</a>
+                        </p>
+                        <p>
+                            <a class="text-reset" href="#!">Curs Sincron</a>
+                        </p>
+                    </div>
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Legături Utile
+                        </h6>
+                        <p>
+                            <a class="text-reset" href="#!">Setări</a>
+                        </p>
+                        <p>
+                            <a class="text-reset" href="#!">Întebări frecvente</a>
+                        </p>
+                        <p>
+                            <a class="text-reset" href="#!">Ajutor</a>
+                        </p>
+                    </div>
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> România, București</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            contact@pythonschool.ro
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 40 742 677 177</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2022-2023 Copyright. Python_School. Produs în România.
+        </div>
+    </footer>
+
+    <!-- Load JS -->
+    <script crossorigin="anonymous"
+            integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+</div>
+</body>
+
+</html>

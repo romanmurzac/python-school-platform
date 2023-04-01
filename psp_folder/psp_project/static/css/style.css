@@ -1,0 +1,40 @@
+/* Style settings for Main Section */
+.first-section {
+    margin-top: 100px;
+    color: #0454fc;
+    text-align: center;
+    font-size: 200%;
+}
+
+/* Added font for Main text */
+.first-section h1 {
+    font-family: 'Archivo Black', sans-serif;
+}
+
+/* Added font for Countdown*/
+.countdown {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 200%;
+}
+
+/* Style settings for Second Section  */
+.second-section {
+    margin-top: 100px;
+    margin-bottom: 25px;
+    color: #848484;
+    text-align: center;
+}
+
+/* Style settings for Countdown Section  */
+.countdown {
+    margin-top: 25px;
+    margin-bottom: 100px;
+    color: #848484;
+    text-align: center;
+    font-size: 200%;
+}
+
+/* Style color for Product Section  */
+.mt-4 mb-5 {
+    color: #0454fc;
+}
